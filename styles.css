@@ -1,0 +1,101 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: white;
+}
+
+/* Calculator container */
+.calculator {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+/* Display styling */
+#display {
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+/* Button layout and styles */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 22px;
+    background-color: #ecf0f1;
+    border: none;
+    border-radius: 10px;
+    color: #34495e;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #bdc3c7;
+    transform: scale(1.1);
+}
+
+/* Active effect */
+button:active {
+    background-color: #95a5a6;
+    transform: scale(1);
+}
+
+/* Operator buttons */
+.operator {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #c0392b;
+}
+
+/* Special button (C) */
+.special {
+    background-color: #f39c12;
+    color: #34495e;
+}
+
+.special:hover {
+    background-color: #e67e22;
+}
+
+/* Equal button */
+.equal {
+    background-color: #27ae60;
+    color: white;
+}
+
+.equal:hover {
+    background-color: #2ecc71;
+}
